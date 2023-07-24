@@ -1,0 +1,32 @@
+/* .header{
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    background-color: antiquewhite;
+}
+
+
+.header a{
+    float: left;
+   
+  padding: 80px;
+    color: black;
+    background-color: pink;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+} */
+
+.crad {
+  width: 25vw;
+  padding: 10px;
+  margin-bottom: 40px;
+  /* background-color: lightcoral; */
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.cardImg {
+  border-radius: 10px;
+  width: 100%;
+}
