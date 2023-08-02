@@ -1,8 +1,7 @@
-import React from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';  
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 // import Stack from 'react-stack';
 // Your code using Stack here
-
 
 import "./App.css";
 // import StateFun from "./use_state/StateFun";
@@ -59,6 +58,39 @@ import Home from "./FoodCourt/Home";
 import Layout from "./FoodCourt/Layout";
 
 export default function App() {
+  let data = [
+    {
+      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
+      name: "shose",
+      description: "Non-Slip Fitness Leisure Running Sneakers",
+      price: 29,
+    },
+    {
+      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
+      name: "shose",
+      description: "Non-Slip Fitness Leisure Running Sneakers",
+      price: 29,
+    },
+    {
+      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
+      name: "shose",
+      description: "Non-Slip Fitness Leisure Running Sneakers",
+      price: 29,
+    },
+    {
+      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
+      name: "shose",
+      description: "Non-Slip Fitness Leisure Running Sneakers",
+      price: 29,
+    },
+    {
+      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
+      name: "shose",
+      description: "Non-Slip Fitness Leisure Running Sneakers",
+      price: 29,
+    },
+  ];
+  let [arr, setArr] = useState(data);
   return (
     <div className="con">
       {/* ================Component============= */}
@@ -95,16 +127,18 @@ export default function App() {
 
       {/* ---------------------------------------------------------- */}
 
-      {/* <PropsComp
-        img={
-          "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933"
-        }
-        name={"shooes"}
-        description={"Non-Slip Fitness Leisure Running Sneakers"}
-        price={"$29"}
-      />
+      {arr.map((e) => {
+        return (
+          <PropsComp
+            img={e.img}
+            name={e.name}
+            description={e.description}
+            price={e.price}
+          />
+        );
+      })}
 
-      <PropsComp
+      {/* <PropsComp
         img={
           "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/01/241417/1.jpg?6747"
         }
@@ -136,11 +170,10 @@ export default function App() {
       {/* <PassWord /> */}
       {/* <RegistrationForm/> */}
 
-
       {/* ========================InputComp====================== */}
-       {/* <InputComp/> */}
+      {/* <InputComp/> */}
 
-       {/* <h1>Input and Add Email in React</h1>
+      {/* <h1>Input and Add Email in React</h1>
        <InputAddEmail/>
        <hr/>
        <h1>Input and Add Numbers in React</h1>
@@ -149,45 +182,39 @@ export default function App() {
        <h1>Input and Add Address in React</h1>
        <InputAddAddress/> */}
 
-       {/* ===============================Multipul Input=================== */}
-       {/* <MultipalInput/> */}
-       {/* <CarInput/> */}
+      {/* ===============================Multipul Input=================== */}
+      {/* <MultipalInput/> */}
+      {/* <CarInput/> */}
 
-       {/* <InputClass/> */}
-       {/* <DeletInput/> */}
-       {/* <UserInput/> */}
-       {/* <DeleteCar/> */}
-       {/* <ClassInDelete/> */}
-       {/* <MultiDelete/> */}
-       
-       {/* ============================update input============================= */}
-       {/* <Update/> */}
-       {/* <Crud/> */}
-            {/* <MultiCrud/> */}
+      {/* <InputClass/> */}
+      {/* <DeletInput/> */}
+      {/* <UserInput/> */}
+      {/* <DeleteCar/> */}
+      {/* <ClassInDelete/> */}
+      {/* <MultiDelete/> */}
 
+      {/* ============================update input============================= */}
+      {/* <Update/> */}
+      {/* <Crud/> */}
+      {/* <MultiCrud/> */}
 
-       {/* ============================React Bootstrap=================================== */}
-        {/* <Button/> */}
-        {/* <NewNavbar/> */}
-        {/* <BmiCalculator/> */}
-        {/* <ToDo1/> */}
+      {/* ============================React Bootstrap=================================== */}
+      {/* <Button/> */}
+      {/* <NewNavbar/> */}
+      {/* <BmiCalculator/> */}
+      {/* <ToDo1/> */}
 
-     {/* ===============================Life-Cycle-Method=============== */}
+      {/* ===============================Life-Cycle-Method=============== */}
 
-     {/* <LifeCycleMethod/> */}
+      {/* <LifeCycleMethod/> */}
 
- 
+      {/* =======================Udemy============================================ */}
 
-     {/* =======================Udemy============================================ */}
-    
-      
       {/* <Headers/> */}
-    
-{/* ===============================FoodCourt======================================= */}
-<Home/>
-{/* <Layout/> */}
 
-
+      {/* ===============================FoodCourt======================================= */}
+      {/* <Home/> */}
+      {/* <Layout/> */}
     </div>
   );
 }
