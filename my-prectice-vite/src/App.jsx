@@ -125,7 +125,7 @@ export default function App() {
       <PropsFun id={"3."} name={"binal"} age={28+" "} hobby ={"house wife"} />
       <PropsFun id={"4."} name={"rupesh"} age={30+" "} hobby ={"diamond"} /> */}
 
-      {/* ---------------------------------------------------------- */}
+      {/* ---  ------------------------------------------------------- */}
 
       {arr.map((e) => {
         return (
