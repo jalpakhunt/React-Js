@@ -40,6 +40,23 @@ import Button from "./use_state/React BootStrap/Button";
 import NewNavbar from "./use_state/React BootStrap/NewNavbar";
 import BmiCalculator from "./use_state/React BootStrap/BMICalculator/BmiCalculator";
 import ToDo1 from "./use_state/React BootStrap/RectTo-DoApp/ToDo1";
+import RegistrationForm from "./Project/UserRegistrationForm/RegistrationForm";
+import MultipalInput from "./Input/MultipalInput";
+import CarInput from "./Input/CarInput";
+import InputClass from "./Input/InputClass";
+import DeletInput from "./Input/DeletInput";
+import UserInput from "./Input/UserInput";
+import DeleteCar from "./Input/DeleteCar";
+import ClassInDelete from "./Input/ClassInDelete";
+import LifeCycleMethod from "./Life_CycleMethod/LifeCycleMethod";
+import Header from "./Udemy/Layout/Headers";
+import MultiDelete from "./Input/MultiDelete";
+import Update from "./Input/Update";
+import Crud from "./NewUpdate/Crud";
+import MultiCrud from "./NewUpdate/MultiCrud";
+import Headers from "./Udemy/Layout/Headers";
+import Home from "./FoodCourt/Home";
+import Layout from "./FoodCourt/Layout";
 
 export default function App() {
   return (
@@ -117,6 +134,7 @@ export default function App() {
       {/* <h1>User Form</h1>
       <FormProject1/> */}
       {/* <PassWord /> */}
+      {/* <RegistrationForm/> */}
 
 
       {/* ========================InputComp====================== */}
@@ -131,14 +149,45 @@ export default function App() {
        <h1>Input and Add Address in React</h1>
        <InputAddAddress/> */}
 
+       {/* ===============================Multipul Input=================== */}
+       {/* <MultipalInput/> */}
+       {/* <CarInput/> */}
 
+       {/* <InputClass/> */}
+       {/* <DeletInput/> */}
+       {/* <UserInput/> */}
+       {/* <DeleteCar/> */}
+       {/* <ClassInDelete/> */}
+       {/* <MultiDelete/> */}
+       
+       {/* ============================update input============================= */}
+       {/* <Update/> */}
+       {/* <Crud/> */}
+            {/* <MultiCrud/> */}
 
 
        {/* ============================React Bootstrap=================================== */}
         {/* <Button/> */}
         {/* <NewNavbar/> */}
         {/* <BmiCalculator/> */}
-        <ToDo1/>
+        {/* <ToDo1/> */}
+
+     {/* ===============================Life-Cycle-Method=============== */}
+
+     {/* <LifeCycleMethod/> */}
+
+ 
+
+     {/* =======================Udemy============================================ */}
+    
+      
+      {/* <Headers/> */}
+    
+{/* ===============================FoodCourt======================================= */}
+<Home/>
+{/* <Layout/> */}
+
+
     </div>
   );
 }

@@ -1,0 +1,12 @@
+form{
+    justify-content: center;
+    /* display: flex; */
+    /* display: inline-block; */
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+    font-weight: bold;
+    color: black;
+    padding: 40px;
+    margin: 50px;
+}
