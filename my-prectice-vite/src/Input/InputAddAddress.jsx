@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import "./Input.css"
 export default function InputAddAddress() {
 
     let [inaddress,setInAddress] =useState("");
