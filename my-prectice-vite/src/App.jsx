@@ -56,41 +56,32 @@ import MultiCrud from "./NewUpdate/MultiCrud";
 import Headers from "./Udemy/Layout/Headers";
 import Home from "./FoodCourt/Home";
 import Layout from "./FoodCourt/Layout";
+import Api from "./API/Api";
+import PropsArr from "./Blog/PropsArr";
+import PropsImg from "./Blog/PropsImg";
+import NewsLatter from "./Blog/NewsLatter";
 
 export default function App() {
-  let data = [
-    {
-      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
-      name: "shose",
-      description: "Non-Slip Fitness Leisure Running Sneakers",
-      price: 29,
-    },
-    {
-      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
-      name: "shose",
-      description: "Non-Slip Fitness Leisure Running Sneakers",
-      price: 29,
-    },
-    {
-      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
-      name: "shose",
-      description: "Non-Slip Fitness Leisure Running Sneakers",
-      price: 29,
-    },
-    {
-      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
-      name: "shose",
-      description: "Non-Slip Fitness Leisure Running Sneakers",
-      price: 29,
-    },
-    {
-      img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
-      name: "shose",
-      description: "Non-Slip Fitness Leisure Running Sneakers",
-      price: 29,
-    },
-  ];
-  let [arr, setArr] = useState(data);
+  // let data = [
+  //   {
+  //     img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
+  //     name: "shose",
+  //     description: "Non-Slip Fitness Leisure Running Sneakers",
+  //     price: 29,
+  //   },
+  //   {
+  //     img: "https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/82/6142201/1.jpg?2933",
+  //     name: "shose",
+  //     description: "Non-Slip Fitness Leisure Running Sneakers",
+  //     price: 29,
+  //   },
+    
+    
+    
+  // ];
+  // let [arr, setArr] = useState(data);
+  // {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{PropsImg}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  
   return (
     <div className="con">
       {/* ================Component============= */}
@@ -127,7 +118,7 @@ export default function App() {
 
       {/* ---  ------------------------------------------------------- */}
 
-      {arr.map((e) => {
+      {/* {arr.map((e) => {
         return (
           <PropsComp
             img={e.img}
@@ -136,7 +127,7 @@ export default function App() {
             price={e.price}
           />
         );
-      })}
+      })} */}
 
       {/* <PropsComp
         img={
@@ -215,6 +206,15 @@ export default function App() {
       {/* ===============================FoodCourt======================================= */}
       {/* <Home/> */}
       {/* <Layout/> */}
+
+
+      {/* ============================Api================================= */}
+      {/* <Api/> */}
+{/* =================================BLOG================================= */}
+      {/* <PropsImg/> */}
+
+  <NewsLatter/>
+  <PropsArr/>
     </div>
   );
 }

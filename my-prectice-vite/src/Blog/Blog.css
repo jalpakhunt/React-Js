@@ -1,0 +1,23 @@
+.crad {
+    /* width: 25vw; */
+    padding: 10px;
+    margin-bottom: 40px;
+    
+    border: 2px solid black;
+    
+    box-sizing: border-box;
+    justify-content: center;
+     
+      
+
+  }
+  
+  .cardImg {
+    border-radius: 50%;
+    width: 20%;
+    overflow-clip-margin: content-box;
+    vertical-align: middle;
+    
+    
+  }
+  
